@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="coordinateTextField" layoutX="99.0" layoutY="181.0" prefHeight="51.0" prefWidth="402.0" />
+      <Label layoutX="99.0" layoutY="53.0" prefHeight="62.0" prefWidth="211.0" text="Slagskip">
+         <font>
+            <Font name="Constantia" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="147.0" text="Hvor vil du prøve å bombe?">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="boardTextArea" layoutX="99.0" layoutY="344.0" prefHeight="332.0" prefWidth="402.0" />
+      <Label layoutX="319.0" layoutY="84.0" text="Aktiv spiller:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="activePlayerLabel" layoutX="421.0" layoutY="84.0" text="Spiller 1" textFill="#21dd27">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="bombeButton" layoutX="222.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleBombButton" prefHeight="51.0" prefWidth="146.0" text="Send bombe" textFill="#d32121">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="371.0" layoutY="705.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" text="Begynn nytt spill">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
